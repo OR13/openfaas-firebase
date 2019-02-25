@@ -1,0 +1,9 @@
+provider:
+  name: faas
+  gateway: http://127.0.0.1:8080
+
+functions:
+  express-api:
+    lang: node10-express-legacy-swagger
+    handler: ./express-api
+    image: or13/express-api
